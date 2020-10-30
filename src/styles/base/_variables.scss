@@ -1,0 +1,116 @@
+:root {
+  // --- Complementary Colors
+  --complementary-color-00: #ffffff;
+  --complementary-color-01: #f3f5f7;
+  --complementary-color-02: #e8ecef;
+  --complementary-color-03: #dfe1e6;
+  --complementary-color-04: #c1c7d0;
+  --complementary-color: rgba(255, 255, 255, 0.08);
+  // ----------------------------------
+  // --- Gray Colors
+  --gray-40: rgba(0, 0, 0, 0.04);
+  --gray-80: rgba(0, 0, 0, 0.08);
+  --gray-100: rgba(0, 0, 0, 0.1);
+  --gray-120: rgba(0, 0, 0, 0.12);
+  --gray-240: rgba(0, 0, 0, 0.24);
+  --gray-250: rgba(0, 0, 0, 0.25);
+  --gray-400: rgba(0, 0, 0, 0.4);
+  --gray-450: rgba(0, 0, 0, 0.45);
+  --gray-800: rgba(0, 0, 0, 0.8);
+  // ----------------------------------
+  // --- Base Colors
+  --green: rgb(0, 202, 134);
+  --dark-green: rgb(0, 163, 109);
+  --green-80: rgba(0, 202, 134, 0.08);
+  --green-240: rgba(0, 202, 134, 0.24);
+  --green-400: rgba(0, 202, 134, 0.4);
+  --green-800: rgba(0, 202, 134, 0.8);
+  --yellow: rgb(245, 201, 93);
+  --dark-yellow: #dbb553;
+  --yellow-80: rgba(245, 201, 93, 0.08);
+  --yellow-240: rgba(245, 201, 93, 0.24);
+  --yellow-400: rgba(245, 201, 93, 0.4);
+  --yellow-800: rgba(245, 201, 93, 0.8);
+  --orange: #ff9800;
+  --dark-orange: #f57c00;
+  --red: rgb(224, 32, 32);
+  --dark-red: var(--red);
+  --red-80: rgba(224, 32, 32, 0.08);
+  --red-240: rgba(224, 32, 32, 0.24);
+  --red-400: rgba(224, 32, 32, 0.4);
+  --red-800: rgba(224, 32, 32, 0.8);
+  // ----------------------------------
+  // --- Brand Colors
+  --primary-color: rgb(231, 63, 94);
+  --dark-primary-color: var(--primary-color);
+  --primary-color-60: rgba(231, 63, 94, 0.06);
+  --primary-color-80: rgba(231, 63, 94, 0.08);
+  --primary-color-240: rgba(231, 63, 94, 0.24);
+  --primary-color-400: rgba(231, 63, 94, 0.4);
+  --primary-color-800: rgba(231, 63, 94, 0.8);
+  --secondary-color: rgb(32, 32, 37);
+  --dark-secondary-color: #000;
+  --secondary-color-60: rgba(32, 32, 37, 0.06);
+  --secondary-color-80: rgba(32, 32, 37, 0.08);
+  --secondary-color-240: rgba(32, 32, 37, 0.24);
+  --secondary-color-400: rgba(32, 32, 37, 0.4);
+  --secondary-color-800: rgba(32, 32, 37, 0.8);
+  --tertiary-color: #2a3942;
+  --dark-tertiary-color: #2a3942;
+  // ----------------------------------
+  // --- Status Colors
+  --success-color: var(--green);
+  --dark-success-color: var(--dark-green);
+  --warning-color: var(--yellow);
+  --dark-warning-color: var(--dark-yellow);
+  --error-color: var(--red);
+  --dark-error-color: var(--dark-red);
+  // ----------------------------------
+  // --- Disabled Colors
+  --disabled-background-color: var(--gray-80);
+  --disabled-text-color: var(--gray-240);
+  // ----------------------------------
+  // --- Others colors
+  --border-color: var(--gray-80);
+  --light-text-color: var(--gray-400);
+  --text-color: var(--gray-800);
+  --title-color: var(--text-color);
+  // ----------------------------------
+  // --- Typography
+  --primary-font-family: 'DM Sans', sans-serif;
+  // ----------------------------------
+  // --- Title
+  --title-sm: 20px;
+  --title-md: 24px;
+  --title-lg: 28px;
+  --title-xl: 32px;
+  --title: var(--title-md);
+  --title-weight: 700;
+  // ----------------------------------
+  // --- Text
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 18px;
+  --text: var(--text-sm);
+  --text-weight: 400;
+  // ----------------------------------
+  // --- Border Radius
+  --border-radius-xs: 2px;
+  --border-radius-sm: 4px;
+  --border-radius-md: 6px;
+  --border-radius-lg: 8px;
+  --border-radius-xl: 8px;
+  --border-radius: var(--border-radius-sm);
+  // ----------------------------------
+  // --- Box Shadow
+  --box-shadow-sub: inset 0 1px 3px 0 var(--gray-120);
+  --box-shadow-border-1: inset 0 0 0 1px var(--gray-80);
+  --box-shadow-border-2: inset 0 0 0 2px var(--gray-80);
+  --box-shadow-normal: 0 0 1px 1px var(--gray-40), 0 1px 1px 0 var(--gray-120);
+  --box-shadow-raised: 0 0 1px 1px var(--gray-40), 0 1px 3px 0 var(--gray-120);
+  --box-shadow-overlay: 0 0 1px 1px var(--gray-40), 0 2px 6px 0 var(--gray-120);
+  --box-shadow-popout: 0 0 1px 1px var(--gray-40), 0 8px 16px 0 var(--gray-120);
+  --box-shadow: var(--box-shadow-normal);
+  // ----------------------------------
+}
