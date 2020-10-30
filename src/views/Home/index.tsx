@@ -1,17 +1,17 @@
 import React from 'react';
 
-import { EventTitle } from './style';
+import { HomeTitle } from './style';
 import Layout from '@components/Layout';
 import Countdown from '@components/Countdown';
 
-export const EventPage = (): JSX.Element => (
+export const HomePage = (): JSX.Element => (
   <Layout>
     <section className="container">
-      <EventTitle>
+      <HomeTitle>
         Falta <Countdown /> para 2020 acabar
-      </EventTitle>
+      </HomeTitle>
     </section>
   </Layout>
 );
 
-export default EventPage;
+export default HomePage;
