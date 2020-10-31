@@ -1,1 +1,1 @@
-export { default } from '@views/Event';
+export { default } from '@views/Home';
