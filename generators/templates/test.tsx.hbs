@@ -1,0 +1,12 @@
+import { render } from '@test/testUtils';
+
+import {{pascalCase name}} from '.'
+
+describe('{{pascalCase name}}', () => {
+it('should render the heading', () => {
+const { getByRole } = render(
+<{{pascalCase name}} />);
+
+expect(getByRole('heading', { name: /{{pascalCase name}}/i })).toBeInTheDocument();
+})
+})
