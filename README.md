@@ -12,7 +12,7 @@ Bootstrap a developer-friendly NextJS app configured with:
 
 ## Available Scripts
 
-First of all, is necessary to have [Node](https://nodejs.org/en/) installed on your machinne.<br>
+First of all, is necessary to have [Node](https://nodejs.org/en/) installed on your machine.<br>
 In the project directory, you can run:
 
 ### `yarn`
