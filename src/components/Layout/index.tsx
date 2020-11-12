@@ -1,6 +1,8 @@
 import React, { ReactNode, FunctionComponent } from 'react';
 import Head from 'next/head';
 
+import { PROJECT_NAME } from '@utils/strings';
+
 type Props = {
   children?: ReactNode;
   title?: string;
@@ -28,7 +30,7 @@ const Layout: FunctionComponent<Props> = ({ children, title }) => (
 );
 
 Layout.defaultProps = {
-  title: 'Quanto Falta',
+  title: PROJECT_NAME,
 };
 
 export default Layout;
