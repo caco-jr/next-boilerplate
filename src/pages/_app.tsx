@@ -1,4 +1,5 @@
 import { ThemeProvider } from 'styled-components';
+import { AppProps } from 'next/app';
 
 import '@styles/main.scss';
 
@@ -8,7 +9,7 @@ const theme = {
   },
 };
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <ThemeProvider theme={theme}>
       <Component {...pageProps} />
