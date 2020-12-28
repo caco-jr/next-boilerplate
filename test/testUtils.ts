@@ -24,3 +24,40 @@ export * from '@testing-library/react';
 
 // override render method
 export { customRender as render };
+
+// Mocks useRouter
+const useRouter = jest.spyOn(require('next/router'), 'useRouter');
+
+/**
+ * mockNextUseRouter
+ * Mocks the useRouter React hook from Next.js on a test-case by test-case basis
+ */
+export function mockNextUseRouter(
+  props: {
+    route?: string;
+    pathname?: string;
+    query?: Record<string, any>;
+    asPath?: string;
+  } = {}
+): void {
+  useRouter.mockImplementationOnce(() => ({
+    basePath: '',
+    pathname: '/',
+    route: '/',
+    asPath: '/',
+    query: {},
+    push: jest.fn(),
+    replace: jest.fn(),
+    reload: jest.fn(),
+    back: jest.fn(),
+    prefetch: jest.fn(),
+    beforePopState: jest.fn(),
+    events: {
+      on: jest.fn(),
+      off: jest.fn(),
+      emit: jest.fn(),
+    },
+    isFallback: false,
+    ...props,
+  }));
+}
