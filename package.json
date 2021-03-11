@@ -4,6 +4,7 @@
   "license": "MIT",
   "version": "1.0.0",
   "scripts": {
+    "postinstall": "husky install .config/husky",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -13,12 +14,6 @@
     "test": "jest",
     "test-all": "yarn lint && yarn type-check && yarn test",
     "generate": "yarn plop --plopfile generators/plopfile.js && yarn format"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "yarn run type-check"
-    }
   },
   "lint-staged": {
     "*.@(ts|tsx)": [
