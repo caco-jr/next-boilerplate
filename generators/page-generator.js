@@ -16,7 +16,7 @@ module.exports = plop => {
       },
       {
         type: 'add',
-        path: '../src/views/{{pascalCase name}}/{pascalCase name}.tsx',
+        path: '../src/views/{{pascalCase name}}/{{pascalCase name}}.tsx',
         templateFile: 'templates/Page.tsx.hbs',
       },
       {
@@ -26,7 +26,7 @@ module.exports = plop => {
       },
       {
         type: 'add',
-        path: '../src/views/{{pascalCase name}}/{pascalCase name}.test.tsx',
+        path: '../src/views/{{pascalCase name}}/{{pascalCase name}}.test.tsx',
         templateFile: 'templates/test.tsx.hbs',
       },
       {
