@@ -3,11 +3,9 @@ import Layout from '@components/Layout';
 
 export const {{pascalCase name}}Page = (): JSX.Element => (
 <Layout title="{{sentenceCase name}}">
-    <section className="container">
-        <S.Wrapper>
-            <h1>{{pascalCase name}}</h1>
-        </S.Wrapper>
-    </section>
+    <S.Wrapper className="container">
+        <h1>{{pascalCase name}}</h1>
+    </S.Wrapper>
 </Layout>
 );
 
