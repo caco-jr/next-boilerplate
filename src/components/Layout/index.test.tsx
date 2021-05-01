@@ -11,7 +11,7 @@ describe('LayoutComponent', () => {
   });
 
   it('Should have defaultProps for "title"', () => {
-    expect(Layout.defaultProps?.title).not.toBeDefined();
+    expect(Layout.defaultProps?.title).toBeDefined();
   });
 
   it('Should render children content', () => {
