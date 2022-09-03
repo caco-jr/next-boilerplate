@@ -1,5 +1,5 @@
 import { ThemeProvider } from 'styled-components';
-import { AppProps } from 'next/app';
+import type { AppProps } from 'next/app';
 
 import '@styles/main.scss';
 
