@@ -2,6 +2,7 @@ import { ThemeProvider } from 'styled-components';
 import type { AppProps } from 'next/app';
 
 import '@styles/main.scss';
+import { JSX } from 'react';
 
 const theme = {
   colors: {
@@ -9,10 +10,12 @@ const theme = {
   },
 };
 
-export default function App({ Component, pageProps }: AppProps): JSX.Element {
+const App = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
     <ThemeProvider theme={theme}>
       <Component {...pageProps} />
     </ThemeProvider>
   );
-}
+};
+
+export default App;
